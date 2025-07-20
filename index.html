@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEOS PIZZA 🍕 - Semana 8 Bootstrap & JS</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Archivo CSS personalizado -->
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Encabezado con navegación -->
+  <header class="bg-danger text-white">
+    <nav class="container navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand text-uppercase fs-3 fw-bold" href="#">NEOS PIZZA 🍕</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#carrusel">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sección principal -->
+  <main class="container my-4">
+    <!-- Carrusel Bootstrap -->
+    <section id="carrusel" class="mb-5">
+      <h2 class="mb-3 text-uppercase fw-semibold">Especialidades NEOS PIZZA 🍕</h2>
+      <div id="pizzaCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" class="d-block w-100 rounded" alt="Pizza Pepperoni" />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>NEOS CHICKEN PIZZA</h5>
+              <p>Deliciosa pizza de pollo, jamón y queso mozzarella</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://scontent.fptz1-1.fna.fbcdn.net/v/t1.6435-9/94569479_107549874272995_3065722800909058048_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE225dW8mCTxII8P4faVmLpocBj5zwZOUChwGPnPBk5QEyeuS1UnCC17vHmpSHU4LQz9AUAVc9N4WejAr6HqJek&_nc_ohc=feMyTSBvKLUQ7kNvwGj7_gT&_nc_oc=AdntRP6S53c_u0gXm3E3s_qAiWmpVP71ysmPHXGduLikF98OFZDTCS-B9UiSx-gIVMX7Xw81SkuSR8iriu-7iYLL&_nc_zt=23&_nc_ht=scontent.fptz1-1.fna&_nc_gid=H8tMZhvsv6Rn00xTgv9IzA&oh=00_AfSILkFCDIHIEgmCoT9sazgQvCtjO03o7wFXNyNqVuHLCA&oe=68A4CCCF" class="d-block w-100 rounded" alt="Alitas BBQ" />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>COMBO ALITAS BBQ</h5>
+              <p>6 Alitas jugosas con salsa BBQ casera + papas</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIezRea_51ot5LAyGaaIc9Ypyh7RmJ54TRFA&s" class="d-block w-100 rounded" alt="Lasaña" />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5>Lasaña Tradicional</h5>
+              <p>COMBO PIZZA + ALITAS ---PIZZA PERSONAL + 4 ALITAS + PAPITAS FRITAS + BEBIDA</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Tabla de productos -->
+    <section id="menu" class="mb-5">
+      <h2 class="mb-3 text-uppercase fw-semibold">Menú NEOS PIZZA 🍕</h2>
+      <table class="table table-striped align-middle table-hover">
+        <thead class="table-danger">
+          <tr>
+            <th>Producto</th>
+            <th>Imagen</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pizza Pepperoni</td>
+            <td><img src="https://cdn.unotv.com/images/2024/09/pizza-pepperoni-no-existe-italia-152140.jpeg" /></td>
+            <td>Deliciosa pizza con pepperoni y queso mozzarella</td>
+            <td>$10.00</td>
+          </tr>
+          <tr>
+            <td>Alitas BBQ</td>
+            <td><img src="https://madreandina.com.pe/wp-content/uploads/2021/10/alitas-6.png" alt="Alitas BBQ" class="img-thumbnail producto-img" /></td>
+            <td>Alitas jugosas con salsa BBQ casera</td>
+            <td>$6.00</td>
+          </tr>
+          <tr>
+            <td>Lasaña Tradicional</td>
+            <td><img src="https://recetacubana.com/wp-content/uploads/2019/12/receta-de-lasana.avif" /></td>
+            <td>Lasaña hecha con carne o pollo; queso gratinado</td>
+            <td>$5.50</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="mb-5">
+      <h2 class="mb-3 text-uppercase fw-semibold">Contacto NEOS PIZZA 🍕</h2>
+      <form id="contactForm" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre completo *</label>
+          <input type="text" class="form-control" id="nombre" required />
+          <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico *</label>
+          <input type="email" class="form-control" id="email" required />
+          <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje *</label>
+          <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+          <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
+        </div>
+        <button type="submit" class="btn btn-danger">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Botón de alerta -->
+    <section class="text-center mb-5">
+      <button id="alertButton" class="btn btn-warning btn-lg">¡Haz clic aquí para una sorpresa!</button>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-danger text-white text-center py-3">
+  <p>Contacto: 
+    <a href="mailto:contacto@neospizza.com.ec" class="text-white text-decoration-underline">contacto@neospizza.com.ec</a> 
+    | Redes Sociales: 
+    <a href="https://www.facebook.com/neos.neos.7106" target="_blank" class="text-white me-2">Facebook</a> 
+    <a href="https://www.instagram.com/neos_pizza?igsh=MTF1cHA3emR2eTY3dQ==" target="_blank" class="text-white me-2">Instagram</a> 
+    <a href="https://wa.me/message/BKMR57GJ55XTI1" target="_blank" class="text-white">WhatsApp</a>
+  </p>
+  <p>© 2025 NEOS PIZZA 🍕 - Santa Clara, Pastaza</p>
+</footer>
+
+
+  <!-- Bootstrap JS bundle con Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Archivo JS personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* Estilo personalizado para la imagen en la tabla */
+.producto-img {
+  max-width: 120px;
+  border-radius: 8px;
+}
+
+/* Personalización del botón alerta */
+#alertButton {
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+#alertButton:hover {
+  background-color: #ff9900;
+  color: #fff;
+  cursor: pointer;
+}
